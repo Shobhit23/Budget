@@ -1,0 +1,21 @@
+.income-column{
+    width:25%;
+    margin-left: 25%;
+    float: left;
+    text-align: center;
+    height: 350px;
+}
+.expense-column{
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin-right: 25%;
+    height: 350px;
+}
+h1{
+    font-family: 'lato';
+    font-size: 24px;
+    font-weight: 900;
+    transform: uppercase;
+    background-color: grey;
+}

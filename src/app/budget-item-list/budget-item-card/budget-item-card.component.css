@@ -1,0 +1,23 @@
+.root{
+    display: flex;
+    margin-left: 75px;
+    position: relative;
+}
+.x-icon{
+    position: absolute;
+    top: -5px;
+    color:red;
+    margin-left: 70%;
+}
+.budget-item{
+    display: flex;
+    background-color: lightgray;
+    padding:5px;
+}
+.amount{
+    margin-left: 100px;
+    padding:5px;
+}
+.description{
+    padding:5px;
+}

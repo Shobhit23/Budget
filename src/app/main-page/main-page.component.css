@@ -1,0 +1,28 @@
+.top-bar{
+    height:68px;
+    margin:-8px;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.total-budget-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: rgb(54, 7, 92);
+    font-size: 38px;
+    color:white;
+    margin:8px -8px 0px -8px;
+}
+.add-item-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-item-container{
+    width:680px;
+    height:50px;
+    color:red;
+}

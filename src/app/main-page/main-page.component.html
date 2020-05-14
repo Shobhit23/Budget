@@ -1,0 +1,22 @@
+<div class="top-bar">
+    <h1>
+        BUDGET CALCULATOR
+    </h1>
+</div>
+
+<div class="total-budget-section">
+    <h2 [ngStyle]="{'color': (netBalance>=0) ? '#008000' : '#ff0000'}">
+        {{netBalance | currency}}
+    </h2>
+</div>
+
+<section class="add-item-section">
+    <div class="add-item-container">
+        <app-add-item-form (add)="addItem($event)"></app-add-item-form>
+    </div>
+</section>
+<hr style='margin: 0px;'>
+<app-budget-item-list [itemList]="itemList" (localItem)="deleteItem($event)" (editItem)="editItem($event)"></app-budget-item-list>
+
+<button type="button" data-toggle="modal" data-target="#myModal" id="hidden-button" style="display:none">Open Modal</button>
+<app-popup [itemPopup]="itemHome" (updatedItem)="updateItem($event)"></app-popup>

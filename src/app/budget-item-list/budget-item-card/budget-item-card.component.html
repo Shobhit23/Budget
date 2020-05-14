@@ -1,0 +1,14 @@
+<div class="root">
+    <div class="budget-item">
+        <div class="description" [ngStyle]="{'color': (item.amount>=0) ? '#008000' : '#ff0000'}">
+            <p>{{item.description}}</p>
+        </div>
+        <div class="amount" [ngStyle]="{'color': (item.amount>=0) ? '#008000' : '#ff0000'}">
+            {{item.amount | currency}}
+        </div>
+        <button type="button" class="close x-icon" aria-label="Close" (click)="delete()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+    </div>
+
+</div>
